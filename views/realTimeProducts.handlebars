@@ -1,0 +1,82 @@
+<header>
+  <nav class="p-3 mb-2 bg-light text-dark">
+    <div class="container-fluid">
+      <p class="fs-1 text-center">
+        Lista de productos con Websockets en tiempo real
+      </p>
+    </div>
+  </nav>
+</header>
+<main>
+  <section id="cards" class="container-fluid row text-center"></section>
+  <section class="p-3 mt-4 mb-2 bg-light text-dark">
+    <div class="container-fluid">
+      <p class="fs-1 text-center">
+        Formulario para agregar productos
+      </p>
+    </div>
+  </section>
+  <section id="" class="container-sm row text-center mt-5">
+      <input
+        type="text"
+        required
+        id="title"
+        class="form-control mx-2 mb-3 p-2 w-25 p-3"
+        placeholder="Nombre del producto"
+        aria-label="Nombre del producto"
+      />
+      <input
+        type="text"
+        required
+        id="description"
+        class="form-control mx-2 mb-3 p-2 w-25 p-3"
+        placeholder="Descripcion del producto"
+        aria-label="Descripcion del producto"
+      />
+      <input
+        type="text"
+        required
+        id="price"
+        class="form-control mx-2 mb-3 p-2 w-25 p-3"
+        placeholder="Precio del producto"
+        aria-label="Precio del producto"
+      />
+      <input
+        type="text"
+        required
+        id="code"
+        class="form-control mx-2 mb-3 p-2 w-25 p-3"
+        placeholder="Code del producto"
+        aria-label="Code del producto"
+      />
+      <input
+        type="text"
+        required
+        id="status"
+        class="form-control mx-2 mb-3 p-2 w-25 p-3"
+        placeholder="Status del producto"
+        aria-label="Status del producto"
+      />
+      <input
+        type="text"
+        required
+        id="stock"
+        class="form-control mx-2 mb-3 p-2 w-25 p-3"
+        placeholder="Stock del producto"
+        aria-label="Stock del producto"
+      />
+      <input
+        type="text"
+        required
+        id="category"
+        class="form-control mx-2 mb-3 p-2 w-25 p-3"
+        placeholder="Categoria del producto"
+        aria-label="Categoria del producto"
+      />
+      <button id="send" class="btn bg-light border border-success mb-3 p-2 w-25 p-3" onclick="sendProduct()">Agregar
+        Producto</button>
+    </div>
+  </section>
+</main>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>
